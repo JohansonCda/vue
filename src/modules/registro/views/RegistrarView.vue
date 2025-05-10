@@ -1,0 +1,38 @@
+<template>
+  <div>
+    <h2>Formulario de registro</h2>
+    <Form :validation-schema="schema" @submit="onSubmit">
+      <div class="form">
+        <label for="nombre">Nombre: </label>
+        <Field name="nombre" type="text" placeholder="ingrese su nombre" id="nombre" />
+        <ErrorMessage name="nombre" />
+      </div>
+      <div class="form">
+        <label for="correo">Correo: </label>
+        <Field name="email" type="email" placeholder="ingrese su correo" id="correo" />
+        <ErrorMessage name="email" />
+      </div>
+
+      <div class="form">
+        <button type="submit">Registrar</button>
+      </div>
+
+    </Form>
+  </div>
+</template>
+
+<script setup>
+import { Form, Field, ErrorMessage } from 'vee-validate';
+import { schema } from '../schemas/validationSchema';
+
+const onSubmit = () => {
+  console.log("Se ha enviado el formulario");
+};
+
+</script>
+
+<style scoped>
+.form {
+  margin-bottom: 10px;
+}
+</style>
