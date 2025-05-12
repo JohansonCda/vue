@@ -1,4 +1,5 @@
 <template>
+  <Header></Header>
   <div class="container">
     <Sidebar></Sidebar>
     <div class="content">
@@ -8,7 +9,8 @@
 </template>
 
 <script setup>
-import Sidebar from '@/components/Sidebar.vue';
+import Sidebar from '../components/Sidebar.vue';
+import Header from '../components/Header.vue';
 import { RouterView } from 'vue-router';
 </script>´
 
