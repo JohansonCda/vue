@@ -5,7 +5,7 @@ const API_URL = 'https://api.open-meteo.com/v1/forecast?latitude=3.4372&longitud
 export const getAltura = async () => {
 
   const respuesta = await axios.get(API_URL);
-  console.log("Altura");
+  //console.log("Altura");
   const nuevaAltura = respuesta.data.current.temperature_2m;
   return nuevaAltura;
 };
