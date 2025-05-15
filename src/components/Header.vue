@@ -1,11 +1,14 @@
 <template>
   <div class="header">
-    {{ mensajeRecibido }}<Weather></Weather>
+    {{ mensajeRecibido }}
+    <Weather></Weather>
+    <Altura></Altura>
   </div>
 </template>
 
 <script setup>
 import Weather from './Weather.vue'
+import Altura from './Altura.vue'
 import { ref, defineProps, watch } from 'vue';
 
 const props = defineProps(['mensaje']);

@@ -1,5 +1,5 @@
 <template>
-  <h3>La temperatura actual es: {{ weatherStore.temperatura }} °</h3>
+  <h3>La temperatura actual es: {{ weatherStore.temperatura }} °   </h3>
 </template>
 
 <script setup>
@@ -14,4 +14,5 @@ onMounted(() => {
 });
 </script>
 
-<style></style>
+<style>
+</style>
